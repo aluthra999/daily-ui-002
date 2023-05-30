@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    /* color: white; */
+}
+
+.modal-content-main {
+    background-color: rgb(255, 255, 255);
+    width: 87%;
+    margin: 20px 0 0 80px;
+    padding-bottom: 40px;
+}
+
+.sub-heading {
+    margin: -20px 0 10px 47px;
+    color: gray;
+    width: 40%;
+    letter-spacing: 0.3px;
+}
+
+.card-info {
+    margin: 20px 0 0 47px;
+}
+
+label {
+    color: grey;
+}
+
+input {
+    background: rgba(224, 217, 217, 0.212);
+    border: none;
+    /* color: white; */
+    outline: none;
+    margin: 5px 0 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+.exp-date-box,
+.cvv-box {
+    display: inline-block;
+}
+
+.cvv-box {
+    margin-left: -30px;
+}
+
+.cc-holder {
+    width: 50%;
+}
+
+.btn {
+    width: 25%;
+    margin-top: 10px;
+}
+
+#ccn {
+    width: 25%;
+}
+
+.right {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    text-align: center;
+    /* color: whitesmoke; */
+    width: 35%;
+}
+
+.right h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.right h4 {
+    margin-top: 20px;
+}
+
+.right small {
+    font-size: 1.5rem;
+}
+
+/* .modal-content-right {
+    background: rgb(113, 62, 84);
+    background: linear-gradient(90deg, rgba(113, 62, 84, 0.3841911764705882) 0%, rgba(91, 108, 128, 1) 100%);
+} */
+
+i {
+    color: black;
+    margin-right: 5px;
+}
+
+.bottom {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+}

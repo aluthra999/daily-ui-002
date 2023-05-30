@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily UI-002</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+      integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="modal-content rounded-4 shadow modal-content-main">
+        <section class="heading">
+          <div>
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h1 class="fw-bold mb-0 fs-2">Final step, make the payment</h1>
+            </div>
+
+            <div class="sub-heading">
+              <small
+                >To finalize your subscription, kindly complete your payment
+                using a valid credit card.</small
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="card-info">
+          <form action="">
+            <div class="line-one">
+              <div class="cc-holder">
+                <label for="cc-holder">Full Name</label><br />
+                <input type="text" placeholder="First M Last" />
+              </div>
+              <div class="cc-number">
+                <label for="card-number">Card Number</label>
+                <br />
+                <input
+                  id="ccn"
+                  type="tel"
+                  inputmode="numeric"
+                  pattern="[0-9\s]{13,19}"
+                  autocomplete="cc-number"
+                  maxlength="19"
+                  placeholder="**** **** **** ****"
+                  oninput="formatCardNumber(event)"
+                />
+              </div>
+            </div>
+            <div class="line-two">
+              <div class="exp-date-box">
+                <label for="exp-date">Exp date</label><br />
+                <input
+                  id="expiryDate"
+                  type="text"
+                  pattern="\d{2}/\d{2}"
+                  maxlength="5"
+                  placeholder="MM/YY"
+                  oninput="formatExpiryDate(event)"
+                />
+              </div>
+              <div class="cvv-box">
+                <label for="cvv">CVV</label><br />
+                <input
+                  type="text"
+                  id="cvv"
+                  name="cvv"
+                  maxlength="3"
+                  pattern="[0-9]{3}"
+                  placeholder="***"
+                  required
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="button" class="btn btn-primary">Pay Now</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="right">
+          <div class="modal-content rounded-4 shadow modal-content-right">
+            <div>
+              <h4>Your Total</h4>
+              <h2>$123<small>.00</small></h2>
+            </div>
+            <div class="bottom">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, perferendis corrupti magnam autem ipsum fuga, dolore
+                quos, ex quo nam minus id.
+              </p>
+              <br />
+              <br />
+              <h6>
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i> 30
+                days money back guarantee
+              </h6>
+
+              <h6>
+                <i class="fa fa-check-square" aria-hidden="true"></i>100%
+                Satisfied Customers
+              </h6>
+
+              <h6>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>24/7 Customer
+                Support
+              </h6>
+
+              <h6>
+                <i class="fa fa-money" aria-hidden="true"></i>Special discounts
+                at partner retailers
+              </h6>
+
+              <h6>
+                <i class="fa fa-gift" aria-hidden="true"></i>Annual Rewards
+              </h6>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a
+              href="https://github.com/aluthra999"
+              target="_blank"
+              class="nav-link px-2 text-body-secondary"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=aluthra999"
+              target="_blank"
+              class="nav-link px-2 text-body-secondary"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://twitter.com/pb02ankt"
+              target="_blank"
+              class="nav-link px-2 text-body-secondary"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.instagram.com/pb02ankt/"
+              target="_blank"
+              class="nav-link px-2 text-body-secondary"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="mailto:luthra1999@gmail.com"
+              class="nav-link px-2 text-body-secondary"
+              ><i class="fa fa-envelope" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Ankit Luthra</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function formatCardNumber(event) {
+        // Remove any existing spaces and non-numeric characters from the input value
+        const input = event.target;
+        const value = input.value.replace(/\s+/g, "").replace(/[^0-9]/g, "");
+
+        // Split the value into groups of 4 numbers
+        const groups = value.match(/.{1,4}/g);
+
+        // Join the groups with a space in between
+        const formattedValue = groups ? groups.join(" ") : "";
+
+        // Set the formatted value back to the input
+        input.value = formattedValue;
+      }
+    </script>
+
+    <script>
+      function formatExpiryDate(event) {
+        const input = event.target;
+        const value = input.value.replace(/\D/g, ""); // Remove non-numeric characters
+        const formattedValue = value.replace(/(\d{2})(\d{2})/, "$1/$2"); // Format as MM/YY
+        input.value = formattedValue;
+      }
+    </script>
+  </body>
+</html>
